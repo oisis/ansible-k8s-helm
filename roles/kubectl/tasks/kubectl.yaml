@@ -1,0 +1,8 @@
+---
+- name: Create a k8s {{ k8s_namespace }} namespace
+  kubernetes.core.k8s:
+    name: '{{ item }}'
+    api_version: v1
+    kind: Namespace
+    state: present
+  with_items: '{{ k8s_namespace }}'

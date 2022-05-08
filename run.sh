@@ -13,5 +13,5 @@
 
 
 # Ansible dry run:
-ansible-playbook playbook.yaml -e env=LOCAL -i environments/local/inventory
+ansible-playbook playbook.yaml -e env=local -i environments/local/inventory --vault-password-file=./.secrets/ansible_password
 

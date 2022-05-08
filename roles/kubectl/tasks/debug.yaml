@@ -1,0 +1,8 @@
+---
+- debug: var=groupvars
+- debug: var=hostsvars
+- debug: var=secretpassword
+
+- name: Print {{ inventory_hostname }} fact
+  ansible.builtin.debug:
+    msg: "Value: {{ inventory_hostname }}"

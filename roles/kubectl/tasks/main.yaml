@@ -1,4 +1,7 @@
 ---
+- include_tasks: '{{ role_path }}/tasks/debug.yaml'
+  when: debug_msg|default(false)|bool == true 
+
 - include_tasks: '{{ role_path }}/tasks/kubectl.yaml'
 
 - include_tasks: '{{ role_path }}/tasks/helm.yaml'

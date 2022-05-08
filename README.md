@@ -1,5 +1,9 @@
 ### Ansible + Kubectl + Helm
 
+##### Run playbook
+```
+ansible-playbook playbook.yaml -e env=local -i environments/local/inventory --vault-password-file=./.secrets/ansible_password
+```
 
 ##### Ansible-vault - secret variables management
 ```

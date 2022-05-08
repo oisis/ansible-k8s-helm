@@ -1,0 +1,6 @@
+[all:vars]
+ansible_port=22
+ansible_connection=ssh
+
+[main]
+prod-host-01 ansible_host=127.0.0.1

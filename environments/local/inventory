@@ -1,0 +1,7 @@
+[all:vars]
+ansible_port=22
+ansible_connection=local
+ansible_python_interpreter=/usr/local/Cellar/ansible/5.7.0/libexec/bin/python
+
+[all]
+localhost ansible_host=127.0.0.1

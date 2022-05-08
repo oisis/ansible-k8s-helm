@@ -13,4 +13,5 @@
 
 
 # Ansible dry run:
-ansible-playbook playbook.yaml --connection=local
+ansible-playbook playbook.yaml -e env=LOCAL -i environments/local/inventory
+
